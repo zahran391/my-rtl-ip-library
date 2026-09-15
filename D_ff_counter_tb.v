@@ -24,7 +24,7 @@ module D_ff_counter_tb();
         rstn = 1;
 
         repeat (100) begin
-            rstn = ($random % 10 != 0);
+            rstn = ($random % 10 != 0); // الفكره هنا اني عمبت شرط لل Randomize 
             @(negedge clk);
         end
 
